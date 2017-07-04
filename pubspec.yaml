@@ -1,0 +1,25 @@
+name: html5_browser_client
+description: http browser client for html5 lib
+version: 0.1.6
+author: Vittorio Ballestra <vittorio.ballestra@gmail.com>
+homepage: https://github.com/dart-polymer/html5_browser_client
+environment:
+    sdk: ">=1.8.0 <2.0.0"
+dependencies:
+  js: ^0.6.1
+  polymerize_common: ^1.0.1
+  polymerize: ^0.9.4
+  html5: ^0.1.6
+#    path: ../polymerize_common
+
+transformers:
+  - polymerize
+dependency_overrides:
+  html5:
+   path: ../html_lib
+  http:
+   git:
+     url: https://github.com/dart-lang/http.git
+     ref: master
+#  polymerize_common:
+#    path: ../polymerize_common
